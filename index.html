@@ -1,550 +1,991 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
-    <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Title -->
-    <title>3ZOZ TRADING | Professional Trading Solutions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
-    <meta name="description"
-        content="3ZOZ TRADING - Professional Trading Solutions, Account Management, VIP Signals, Market Analysis and Trading Education.">
+<title>3ZOZ TRADING | Professional Trading</title>
 
-    <meta name="keywords"
-        content="3ZOZ TRADING, Forex, Gold, Crypto, Trading, Account Management, VIP Signals">
+<meta name="description" content="3ZOZ TRADING - VIP Signals, Account Management, Live Market & Professional Trading">
 
-    <meta name="author" content="3ZOZ TRADING">
+<link rel="icon" href="images/favicon.png">
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- =========================
-            LOADER
-    ========================== -->
+<!--================ PRELOADER ================-->
 
-    <div id="loader">
+<div id="loader">
 
-        <img src="images/logo.png" alt="3ZOZ TRADING Logo">
+<img src="images/logo.png" alt="Logo">
 
-        <h2>3ZOZ TRADING</h2>
+<h2>3ZOZ TRADING</h2>
 
-        <span class="loading"></span>
+</div>
 
-    </div>
+<!--================ LIVE MARKET ================-->
 
-    <!-- =========================
-            HEADER
-    ========================== -->
+<div class="ticker">
 
-    <header>
+<div class="tradingview-widget-container">
 
-        <nav class="navbar">
+<div class="tradingview-widget-container__widget"></div>
 
-            <div class="logo">
+<script type="text/javascript"
+src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+async>
 
-                <img src="images/logo.png" alt="Logo">
-
-                <h2>3ZOZ TRADING</h2>
-
-            </div>
-
-            <ul class="nav-links">
-
-                <li><a href="#home">Home</a></li>
-
-                <li><a href="#markets">Markets</a></li>
-
-                <li><a href="#chart">Chart</a></li>
-
-                <li><a href="#about">About</a></li>
-
-                <li><a href="#services">Services</a></li>
-
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-
-            <div class="menu-btn">
-
-                <i class="fa-solid fa-bars"></i>
-
-            </div>
-
-        </nav>
-
-    </header>
-      <!-- =========================
-            HERO SECTION
-    ========================== -->
-
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <span class="hero-badge">
-                Professional Trading Company
-            </span>
-
-            <h1>
-                Trade Smarter With
-                <span>3ZOZ TRADING</span>
-            </h1>
-
-            <p>
-                Professional account management, VIP trading signals,
-                daily market analysis, and trading education to help you
-                trade with confidence.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="https://wa.me/YOURNUMBER" class="btn btn-primary">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Start Account Management
-                </a>
-
-                <a href="https://t.me/YOURUSERNAME" class="btn btn-secondary">
-                    <i class="fa-brands fa-telegram"></i>
-                    Join Telegram
-                </a>
-
-                <a href="#chart" class="btn btn-outline">
-                    <i class="fa-solid fa-chart-line"></i>
-                    Live Market
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="hero-image">
-
-            <img src="images/logo.png" alt="3ZOZ TRADING Logo">
-
-        </div>
-
-    </section>
-  <!-- =========================
-        LIVE MARKET TICKER
-========================== -->
-
-<section class="market-ticker" id="markets">
-
-    <div class="section-title">
-
-        <span>Live Markets</span>
-
-        <h2>Global Financial Markets</h2>
-
-        <p>
-            Follow the latest movements in Forex, Gold, Crypto,
-            Indices and Stocks in real time.
-        </p>
-
-    </div>
-
-    <div class="tradingview-widget-container">
-
-        <div class="tradingview-widget-container__widget"></div>
-
-        <script type="text/javascript"
-            src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-            async>
 {
-  "symbols": [
-    { "proName": "FOREXCOM:XAUUSD", "title": "Gold" },
-    { "proName": "FOREXCOM:EURUSD", "title": "EUR/USD" },
-    { "proName": "FOREXCOM:GBPUSD", "title": "GBP/USD" },
-    { "proName": "BITSTAMP:BTCUSD", "title": "Bitcoin" },
-    { "proName": "BITSTAMP:ETHUSD", "title": "Ethereum" },
-    { "proName": "FOREXCOM:US30", "title": "US30" },
-    { "proName": "NASDAQ:NDX", "title": "NASDAQ" }
-  ],
-  "showSymbolLogo": true,
-  "isTransparent": true,
-  "displayMode": "adaptive",
-  "colorTheme": "dark",
-  "locale": "en"
+"symbols":[
+{"proName":"FOREXCOM:XAUUSD","title":"Gold"},
+{"proName":"FOREXCOM:XAGUSD","title":"Silver"},
+{"proName":"FX:EURUSD","title":"EUR/USD"},
+{"proName":"FX:GBPUSD","title":"GBP/USD"},
+{"proName":"BITSTAMP:BTCUSD","title":"Bitcoin"},
+{"proName":"BITSTAMP:ETHUSD","title":"Ethereum"},
+{"proName":"NASDAQ:NDX","title":"NASDAQ"},
+{"proName":"FOREXCOM:US30","title":"US30"}
+],
+"showSymbolLogo":true,
+"isTransparent":true,
+"displayMode":"adaptive",
+"colorTheme":"dark",
+"locale":"ar"
 }
-        </script>
 
-    </div>
+</script>
 
-</section>
-<!-- =========================
-        MARKET OVERVIEW
-========================== -->
+</div>
 
-<section class="market-overview">
+</div>
 
-    <div class="section-title">
+<!--================ NAVBAR ================-->
 
-        <span>Our Markets</span>
+<header>
 
-        <h2>Explore Financial Markets</h2>
+<nav>
 
-        <p>
-            Trade the world's most popular financial instruments with confidence.
-        </p>
+<div class="logo">
 
-    </div>
+<img src="images/logo.png" alt="logo">
 
-    <div class="market-grid">
+<h2>3ZOZ <span>TRADING</span></h2>
 
-        <div class="market-card">
-            <i class="fa-solid fa-coins"></i>
-            <h3>Gold</h3>
-            <p>Trade XAU/USD with professional analysis.</p>
-        </div>
+</div>
 
-        <div class="market-card">
-            <i class="fa-solid fa-chart-line"></i>
-            <h3>Forex</h3>
-            <p>Major & Minor currency pairs.</p>
-        </div>
+<ul>
 
-        <div class="market-card">
-            <i class="fa-brands fa-bitcoin"></i>
-            <h3>Crypto</h3>
-            <p>Bitcoin, Ethereum and more.</p>
-        </div>
+<li><a href="#home">الرئيسية</a></li>
 
-        <div class="market-card">
-            <i class="fa-solid fa-building-columns"></i>
-            <h3>Indices</h3>
-            <p>US30, NASDAQ, S&P500 and more.</p>
-        </div>
+<li><a href="#services">الخدمات</a></li>
 
-    </div>
+<li><a href="#markets">الأسواق</a></li>
 
-</section>  
-  <!-- =========================
-        LIVE CHART
-========================== -->
+<li><a href="#results">النتائج</a></li>
 
-<section class="live-chart" id="chart">
+<li><a href="#contact">تواصل</a></li>
 
-    <div class="section-title">
+</ul>
 
-        <span>Live Chart</span>
+<a href="#" class="join-btn">
 
-        <h2>Professional Trading Chart</h2>
+ابدأ التداول
+
+</a>
+
+</nav>
+
+</header>
+<!--================ HERO =================-->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <img src="images/logo.png" class="hero-logo" alt="3ZOZ TRADING">
+
+        <span class="hero-subtitle">
+            PROFESSIONAL TRADING COMPANY
+        </span>
+
+        <h1>
+            3ZOZ <span>TRADING</span>
+        </h1>
 
         <p>
-            Analyze the market live using TradingView charts with multiple
-            indicators and timeframes.
+
+            نقدم خدمات احترافية في إدارة الحسابات، توصيات VIP،
+            التحليل اليومي، وإدارة رأس المال لمساعدتك على تحقيق
+            أفضل النتائج في أسواق المال.
+
         </p>
 
-    </div>
+        <div class="hero-buttons">
 
-    <div class="chart-container">
+            <a href="https://wa.me/XXXXXXXXXX" class="btn gold">
 
-        <div class="tradingview-widget-container">
+                <i class="fa-brands fa-whatsapp"></i>
 
-            <div id="tradingview_chart"></div>
+                تواصل واتساب
 
-            <script type="text/javascript"
-                src="https://s3.tradingview.com/tv.js"></script>
+            </a>
 
-            <script type="text/javascript">
+            <a href="https://t.me/USERNAME" class="btn dark">
 
-                new TradingView.widget({
+                <i class="fa-brands fa-telegram"></i>
 
-                    "autosize": true,
+                قناة التليجرام
 
-                    "symbol": "FOREXCOM:XAUUSD",
-
-                    "interval": "15",
-
-                    "timezone": "Etc/UTC",
-
-                    "theme": "dark",
-
-                    "style": "1",
-
-                    "locale": "en",
-
-                    "toolbar_bg": "#0f172a",
-
-                    "enable_publishing": false,
-
-                    "allow_symbol_change": true,
-
-                    "container_id": "tradingview_chart"
-
-                });
-
-            </script>
+            </a>
 
         </div>
 
     </div>
 
 </section>
-  <!-- =========================
-        ABOUT US
-========================== -->
 
-<section class="about" id="about">
+<!--================ LIVE CHART =================-->
 
-    <div class="section-title">
+<section class="live-chart" id="markets">
 
-        <span>About 3ZOZ TRADING</span>
+<h2>
 
-        <h2>Your Trusted Trading Partner</h2>
+السوق مباشر
 
-        <p>
-            We provide professional account management, VIP trading signals,
-            market analysis, and trading education to help our clients
-            achieve their financial goals.
-        </p>
+</h2>
 
-    </div>
+<div class="tradingview-widget-container">
 
-    <div class="about-container">
+<div id="tradingview_chart"></div>
 
-        <div class="about-image">
+<script type="text/javascript"
+src="https://s3.tradingview.com/tv.js"></script>
 
-            <img src="images/logo.png" alt="3ZOZ TRADING Logo">
+<script>
 
-        </div>
+new TradingView.widget({
 
-        <div class="about-content">
+"width":"100%",
 
-            <div class="counter-box">
+"height":650,
 
-                <i class="fa-solid fa-users"></i>
+"symbol":"FOREXCOM:XAUUSD",
 
-                <h3>5000+</h3>
+"interval":"15",
 
-                <span>Clients Worldwide</span>
+"timezone":"Africa/Cairo",
 
-            </div>
+"theme":"dark",
 
-            <div class="counter-box">
+"style":"1",
 
-                <i class="fa-solid fa-wallet"></i>
+"locale":"ar",
 
-                <h3>3000+</h3>
+"toolbar_bg":"#111111",
 
-                <span>Managed Accounts</span>
+"enable_publishing":false,
 
-            </div>
+"hide_side_toolbar":false,
 
-            <div class="counter-box">
+"allow_symbol_change":true,
 
-                <i class="fa-solid fa-award"></i>
+"container_id":"tradingview_chart"
 
-                <h3>7+</h3>
+});
 
-                <span>Years of Experience</span>
+</script>
 
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
-  <!-- =========================
-        SERVICES
-========================== -->
+<!--================ SERVICES =================-->
 
 <section class="services" id="services">
 
     <div class="section-title">
 
-        <span>Our Services</span>
-
-        <h2>Professional Trading Services</h2>
-
-        <p>
-            Everything you need to improve your trading experience with
-            3ZOZ TRADING.
-        </p>
-
-    </div>
-
-    <div class="services-grid">
-
-        <!-- Service 1 -->
-
-        <div class="service-card">
-
-            <i class="fa-solid fa-briefcase"></i>
-
-            <h3>Account Management</h3>
-
-            <p>
-                Let our professional team manage your trading account
-                with disciplined risk management.
-            </p>
-
-            <a href="https://wa.me/YOURNUMBER" class="service-btn">
-                Contact on WhatsApp
-            </a>
-
-        </div>
-
-        <!-- Service 2 -->
-
-        <div class="service-card">
-
-            <i class="fa-solid fa-gem"></i>
-
-            <h3>VIP Signals</h3>
-
-            <p>
-                Receive high-quality trading signals with detailed analysis.
-            </p>
-
-            <a href="https://t.me/YOURUSERNAME" class="service-btn">
-                Join Telegram
-            </a>
-
-        </div>
-
-        <!-- Service 3 -->
-
-        <div class="service-card">
-
-            <i class="fa-solid fa-graduation-cap"></i>
-
-            <h3>Trading Education</h3>
-
-            <p>
-                Learn trading step by step with practical strategies
-                and market guidance.
-            </p>
-
-            <a href="https://t.me/YOURUSERNAME" class="service-btn">
-                Learn More
-            </a>
-
-        </div>
-
-        <!-- Service 4 -->
-
-        <div class="service-card">
-
-            <i class="fa-solid fa-chart-column"></i>
-
-            <h3>Daily Market Analysis</h3>
-
-            <p>
-                Daily technical analysis covering Gold, Forex,
-                Crypto and major indices.
-            </p>
-
-            <a href="https://t.me/YOURUSERNAME" class="service-btn">
-                View Analysis
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
- <!-- =========================
-        PREMIUM LOGO
-========================== -->
-
-<section class="premium-logo">
-
-    <div class="premium-content">
-
-        <img src="images/logo.png" alt="3ZOZ TRADING Logo">
-
-        <h2>3ZOZ TRADING</h2>
-
-        <p>
-            Professional Trading Solutions
-        </p>
-
         <span>
-            Trade Smart • Trade Safe • Trade Professional
+            OUR SERVICES
         </span>
 
+        <h2>
+            خدمات 3ZOZ TRADING
+        </h2>
+
+        <p>
+            حلول تداول احترافية تساعدك على تطوير أسلوبك
+            وتحقيق أفضل استفادة من فرص الأسواق المالية.
+        </p>
+
     </div>
 
-</section>
-  <!-- =========================
-        CONTACT
-========================== -->
 
-<section class="contact" id="contact">
+    <div class="services-container">
+
+
+        <!-- ACCOUNT MANAGEMENT -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+            </div>
+
+
+            <h3>
+                إدارة الحسابات
+            </h3>
+
+
+            <p>
+
+                خدمة إدارة رأس المال بواسطة فريق متخصص،
+                مع متابعة مستمرة للحسابات واستخدام
+                استراتيجيات تداول مدروسة.
+
+            </p>
+
+
+            <a href="#" class="service-btn">
+
+                معرفة المزيد
+
+            </a>
+
+
+        </div>
+
+
+
+
+        <!-- VIP SIGNALS -->
+
+        <div class="service-card premium">
+
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-crown"></i>
+
+            </div>
+
+
+            <h3>
+
+                توصيات VIP
+
+            </h3>
+
+
+            <p>
+
+                إشارات تداول احترافية تشمل نقاط الدخول،
+                وقف الخسارة، والأهداف مع تحليل كامل للسوق.
+
+            </p>
+
+
+            <a href="#" class="service-btn">
+
+                اشترك الآن
+
+            </a>
+
+
+        </div>
+
+
+
+
+
+        <!-- EDUCATION -->
+
+        <div class="service-card">
+
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+            </div>
+
+
+            <h3>
+
+                تعليم التداول
+
+            </h3>
+
+
+            <p>
+
+                تعلم أساسيات وأساليب التداول من البداية
+                حتى الاحتراف مع شرح عملي للأسواق.
+
+            </p>
+
+
+            <a href="#" class="service-btn">
+
+                ابدأ التعلم
+
+            </a>
+
+
+        </div>
+
+
+
+
+
+        <!-- DAILY ANALYSIS -->
+
+        <div class="service-card">
+
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+            </div>
+
+
+            <h3>
+
+                التحليل اليومي
+
+            </h3>
+
+
+            <p>
+
+                تحليلات يومية للذهب والعملات والأسواق
+                مع متابعة أهم الأخبار الاقتصادية.
+
+            </p>
+
+
+            <a href="#" class="service-btn">
+
+                شاهد التحليل
+
+            </a>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</section>
+<!--================ WHY CHOOSE =================-->
+
+<section class="why-us" id="about">
+
 
     <div class="section-title">
 
-        <span>Contact Us</span>
+        <span>
+            WHY CHOOSE US
+        </span>
 
-        <h2>Get In Touch</h2>
+        <h2>
+            لماذا 3ZOZ TRADING؟
+        </h2>
 
         <p>
-            We're always ready to help you.
+            لأننا نقدم تجربة تداول احترافية تجمع بين
+            التحليل، الإدارة، والتعليم في مكان واحد.
         </p>
 
     </div>
 
-    <div class="contact-buttons">
 
-        <a href="https://wa.me/YOURNUMBER" class="contact-btn whatsapp">
 
-            <i class="fa-brands fa-whatsapp"></i>
+    <div class="why-container">
 
-            WhatsApp
 
-        </a>
 
-        <a href="https://t.me/YOURUSERNAME" class="contact-btn telegram">
+        <div class="why-box">
 
-            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-solid fa-shield-halved"></i>
 
-            Telegram
+            <h3>
+                خبرة واحترافية
+            </h3>
 
-        </a>
+            <p>
+                نعتمد على استراتيجيات تداول مدروسة
+                وتحليل مستمر لحركة الأسواق.
+            </p>
+
+        </div>
+
+
+
+
+        <div class="why-box">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <h3>
+                متابعة مباشرة
+            </h3>
+
+            <p>
+                متابعة مستمرة للأسواق والفرص المهمة
+                مع تحديثات وتحليلات يومية.
+            </p>
+
+        </div>
+
+
+
+
+
+        <div class="why-box">
+
+            <i class="fa-solid fa-users"></i>
+
+            <h3>
+                مجتمع تداول قوي
+            </h3>
+
+            <p>
+                انضم إلى مجتمع من المتداولين
+                وتبادل الخبرات والتجارب.
+            </p>
+
+        </div>
+
+
+
+
+
+        <div class="why-box">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <h3>
+                دعم مستمر
+            </h3>
+
+            <p>
+                فريق دعم لمساعدتك والإجابة على
+                استفساراتك في أي وقت.
+            </p>
+
+        </div>
+
+
 
     </div>
 
+
+
+    <!-- STATS -->
+
+    <div class="stats">
+
+
+        <div class="stat-item">
+
+            <h2>
+                +1000
+            </h2>
+
+            <p>
+                متداول
+            </p>
+
+        </div>
+
+
+
+        <div class="stat-item">
+
+            <h2>
+                +5
+            </h2>
+
+            <p>
+                سنوات خبرة
+            </p>
+
+        </div>
+
+
+
+
+        <div class="stat-item">
+
+            <h2>
+                24/7
+            </h2>
+
+            <p>
+                متابعة السوق
+            </p>
+
+        </div>
+
+
+
+
+        <div class="stat-item">
+
+            <h2>
+                +50
+            </h2>
+
+            <p>
+                تحليل شهري
+            </p>
+
+        </div>
+
+
+
+    </div>
+
+
+
 </section>
-  <!-- =========================
-        FOOTER
-========================== -->
+<!--================ VIP PACKAGES =================-->
 
-<footer>
+<section class="packages" id="pricing">
 
-    <img src="images/logo.png" alt="3ZOZ TRADING">
 
-    <h3>3ZOZ TRADING</h3>
+    <div class="section-title">
+
+        <span>
+            VIP PLANS
+        </span>
+
+        <h2>
+            باقات 3ZOZ TRADING
+        </h2>
+
+        <p>
+            اختر الباقة المناسبة لك واستفد من خدمات
+            التداول والتحليل الاحترافي.
+        </p>
+
+    </div>
+
+
+
+
+    <div class="packages-container">
+
+
+
+        <!-- SILVER -->
+
+        <div class="package-card">
+
+
+            <div class="package-header">
+
+                <i class="fa-solid fa-gem"></i>
+
+                <h3>
+                    SILVER
+                </h3>
+
+            </div>
+
+
+            <h2>
+                $100
+            </h2>
+
+
+            <ul>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    توصيات يومية
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    تحليل السوق
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    دعم المتداولين
+                </li>
+
+
+            </ul>
+
+
+            <a href="#" class="package-btn">
+
+                اشترك الآن
+
+            </a>
+
+
+        </div>
+
+
+
+
+
+
+        <!-- GOLD -->
+
+        <div class="package-card active">
+
+
+            <div class="popular">
+
+                الأكثر طلباً
+
+            </div>
+
+
+
+            <div class="package-header">
+
+                <i class="fa-solid fa-crown"></i>
+
+                <h3>
+                    GOLD
+                </h3>
+
+            </div>
+
+
+            <h2>
+                $200
+            </h2>
+
+
+
+            <ul>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    توصيات VIP
+                </li>
+
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    تحليل احترافي يومي
+                </li>
+
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    متابعة الصفقات
+                </li>
+
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    دعم خاص
+                </li>
+
+
+            </ul>
+
+
+
+            <a href="#" class="package-btn">
+
+                اشترك الآن
+
+            </a>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- PREMIUM -->
+
+        <div class="package-card">
+
+
+            <div class="package-header">
+
+                <i class="fa-solid fa-star"></i>
+
+
+                <h3>
+                    PREMIUM
+                </h3>
+
+
+            </div>
+
+
+
+            <h2>
+                $400
+            </h2>
+
+
+
+
+            <ul>
+
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    إدارة حسابات
+                </li>
+
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    استراتيجية خاصة
+                </li>
+
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    متابعة كاملة
+                </li>
+
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    خدمة VIP
+                </li>
+
+
+
+            </ul>
+
+
+
+            <a href="#" class="package-btn">
+
+                تواصل معنا
+
+            </a>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+</section>
+<!--================ CONTACT =================-->
+
+<section class="contact" id="contact">
+
+
+    <div class="section-title">
+
+        <span>
+            CONTACT US
+        </span>
+
+        <h2>
+            تواصل مع 3ZOZ TRADING
+        </h2>
+
+        <p>
+            فريقنا جاهز لمساعدتك والرد على جميع استفساراتك.
+        </p>
+
+    </div>
+
+
+
+    <div class="contact-container">
+
+
+
+        <div class="contact-card">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            <h3>
+                WhatsApp
+            </h3>
+
+            <p>
+                تواصل مباشر معنا
+            </p>
+
+            <a href="https://wa.me/XXXXXXXXXX" target="_blank">
+                افتح واتساب
+            </a>
+
+        </div>
+
+
+
+
+
+        <div class="contact-card">
+
+            <i class="fa-brands fa-telegram"></i>
+
+            <h3>
+                Telegram
+            </h3>
+
+            <p>
+                انضم لقناة التوصيات
+            </p>
+
+            <a href="https://t.me/USERNAME" target="_blank">
+                دخول القناة
+            </a>
+
+        </div>
+
+
+
+
+
+        <div class="contact-card">
+
+            <i class="fa-brands fa-instagram"></i>
+
+            <h3>
+                Instagram
+            </h3>
+
+            <p>
+                تابع آخر الأخبار
+            </p>
+
+            <a href="#" target="_blank">
+                متابعة
+            </a>
+
+        </div>
+
+
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!--================ FOOTER =================-->
+
+<footer class="footer">
+
+
+    <div class="footer-logo">
+
+        <img src="images/logo.png" alt="3ZOZ TRADING">
+
+    </div>
+
+
 
     <p>
-        © 2019–2026 3ZOZ TRADING. All Rights Reserved.
+
+        3ZOZ TRADING © 2026  
+        جميع الحقوق محفوظة
+
     </p>
+
+
+
+    <div class="footer-social">
+
+
+        <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+
+
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+
+        <a href="#">
+            <i class="fa-brands fa-telegram"></i>
+        </a>
+
+
+        <a href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+
+    </div>
+
+
 
 </footer>
 
-<script src="script.js"></script>
 
-</body>
-</html>
 
+
+
+
+
+<!--================ FLOATING BUTTONS =================-->
+
+<div class="floating-social">
+
+
+    <a href="https://wa.me/XXXXXXXXXX" 
+       class="whatsapp"
+       target="_blank">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+
+    <a href="https://t.me/USERNAME"
+       class="telegram"
+       target="_blank">
+
+        <i class="fa-brands fa-telegram"></i>
+
+    </a>
+
+
+</div>
