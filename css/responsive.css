@@ -1,1 +1,486 @@
+/*================================================
+    3ZOZ TRADING
+    RESPONSIVE CSS
+================================================*/
 
+
+/*==============================
+   TABLET DEVICES
+==============================*/
+
+
+@media(max-width:1024px){
+
+
+    section{
+
+        padding:80px 5%;
+
+    }
+
+
+
+    .hero h1{
+
+        font-size:55px;
+
+    }
+
+
+
+    .services-container{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+
+    .why-container{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+
+    .stats{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+
+    .packages-container{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+
+    .contact-container{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+
+}
+
+/*==============================
+   MOBILE DEVICES
+==============================*/
+
+
+@media(max-width:600px){
+
+
+
+    section{
+
+        padding:60px 5%;
+
+    }
+
+
+
+
+
+    /* HERO */
+
+
+    .hero{
+
+        min-height:90vh;
+
+    }
+
+
+
+    .hero-logo{
+
+        width:110px;
+
+    }
+
+
+
+    .hero-subtitle{
+
+        font-size:12px;
+
+        letter-spacing:2px;
+
+    }
+
+
+
+
+    .hero h1{
+
+        font-size:40px;
+
+        line-height:1.3;
+
+    }
+
+
+
+
+
+    .hero p{
+
+        font-size:15px;
+
+        line-height:1.8;
+
+    }
+
+
+
+
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+
+
+
+    .btn{
+
+        width:100%;
+
+        max-width:300px;
+
+    }
+
+
+
+
+
+
+
+    /* SECTION TITLE */
+
+
+    .section-title h2{
+
+
+        font-size:30px;
+
+
+    }
+
+
+
+
+
+    .section-title p{
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+
+
+
+
+    /* SERVICES */
+
+
+    .services-container{
+
+
+        grid-template-columns:
+
+        1fr;
+
+
+    }
+
+
+
+
+
+
+    .service-card{
+
+
+        padding:30px 20px;
+
+
+    }
+
+
+
+
+
+
+
+    /* WHY */
+
+
+    .why-container{
+
+
+        grid-template-columns:
+
+        1fr;
+
+
+    }
+
+
+
+
+
+
+    /* STATS */
+
+
+    .stats{
+
+
+        grid-template-columns:
+
+        1fr;
+
+
+    }
+
+
+
+
+
+
+    .stat-item h2{
+
+
+        font-size:35px;
+
+
+    }
+
+
+
+
+
+
+
+
+    /* PACKAGES */
+
+
+    .packages-container{
+
+
+        grid-template-columns:
+
+        1fr;
+
+
+    }
+
+
+
+
+
+
+    .package-card{
+
+
+        padding:35px 20px;
+
+
+    }
+
+
+
+
+
+
+    .package-card h2{
+
+
+        font-size:38px;
+
+
+    }
+
+
+
+
+
+
+    /* CONTACT */
+
+
+    .contact-container{
+
+
+        grid-template-columns:
+
+        1fr;
+
+
+    }
+
+
+
+
+
+
+    /* FOOTER */
+
+
+    .footer{
+
+
+        padding:35px 5%;
+
+
+    }
+
+
+
+
+
+
+    /* FLOAT BUTTONS */
+
+
+    .floating-social{
+
+
+        left:15px;
+
+        bottom:15px;
+
+
+    }
+
+
+
+
+
+    .floating-social a{
+
+
+        width:52px;
+
+
+        height:52px;
+
+
+        font-size:25px;
+
+
+    }
+
+
+
+
+
+}
+/*================================================
+    3ZOZ TRADING WEBSITE
+    MAIN JAVASCRIPT
+================================================*/
+
+
+//==============================
+// PAGE LOADED ANIMATION
+//==============================
+
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+
+    const elements = document.querySelectorAll(
+        ".service-card, .why-box, .package-card, .contact-card, .stat-item"
+    );
+
+
+    elements.forEach((el,index)=>{
+
+        el.style.opacity="0";
+
+        el.style.transform="translateY(40px)";
+
+        el.style.transition="0.6s ease";
+
+
+        setTimeout(()=>{
+
+            el.style.opacity="1";
+
+            el.style.transform="translateY(0)";
+
+
+        }, index * 150);
+
+
+    });
+
+
+
+});
+
+
+
+
+
+//==============================
+// ACTIVE SCROLL EFFECT
+//==============================
+
+
+window.addEventListener("scroll",()=>{
+
+
+    const sections =
+    document.querySelectorAll("section");
+
+
+    let scrollPosition =
+    window.scrollY + 200;
+
+
+
+    sections.forEach(section=>{
+
+
+        if(
+            scrollPosition >= section.offsetTop &&
+            scrollPosition <
+            section.offsetTop + section.offsetHeight
+        ){
+
+            section.classList.add("active");
+
+        }
+
+
+    });
+
+
+
+});
